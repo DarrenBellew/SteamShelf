@@ -1,8 +1,8 @@
 {
-  "name": "VueJS-Starter",
+  "name": "SteamShelf",
   "version": "0.0.3",
   "description": "A Vue.js project",
-  "author": "Paul Bastowski <pbastowski@gmail.com>",
+  "author": "Darren Bellew",
   "private": true,
   "scripts": {
     "clean-install": "cd .. && mvn clean install",
@@ -13,11 +13,7 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --auto-watch",
     "dev": "node build/dev-server.js",
     "build": "npm version patch && node build/build.js",
-    "push-cf": "npm run build-cf && cd server && cf push",
-    "build-cf": "npm run build && npm run cp-dist",
     "cp-dist": "cp -r ./static ./dist/ || true && rm -rf ./server/public && cp -r ./dist/ ./server/public/ && cp ./dist/index.html ./server/public/",
-    "start-postgresql": "pg_ctl -D /usr/local/var/postgres start",
-    "stop-postgresql": "pg_ctl -D /usr/local/var/postgres stop",
     "add-git-hooks": "cp ./git-hooks/pre-push ../.git/hooks/pre-push && chmod +x ../.git/hooks/pre-push"
   },
   "dependencies": {
