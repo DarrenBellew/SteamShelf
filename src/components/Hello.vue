@@ -31,8 +31,6 @@
 </template>
 
 <script>
-    import { getUserDetails } from '../services/user-service'
-
     export default {
         name: 'hello',
         injectstore: ['version'],
@@ -44,7 +42,6 @@
         },
         async created() {
 			console.log('test');
-            this.user = await getUserDetails();
         }
     }
 </script>

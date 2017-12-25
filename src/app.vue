@@ -1,8 +1,9 @@
-<template lang="pug">
-    #app
-        busy-spinner
-        img(src='./assets/logo.png')
-        router-view
+<template>
+    <div id="app">
+    	<busy-spinner></busy-spinner>
+		<img src="./assets/logo.png">
+		<router-view></router-view>
+    </div>
 </template>
 
 <script>
