@@ -43,7 +43,8 @@
             }
         },
         async created() {
-            this.user = await getUserDetails()
+			console.log('test');
+            this.user = await getUserDetails();
         }
     }
 </script>

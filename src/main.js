@@ -6,10 +6,10 @@
 import Vue from 'vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'font-awesome/css/font-awesome.css'
-import "core-js/client/shim.min.js"
+import 'core-js/client/shim.min.js'
 
-import "./common/dev-stuff";
-import "./common/vue-prototype-decorators";
+import './common/dev-stuff';
+import './common/vue-prototype-decorators';
 
 import Vuelidate from 'vuelidate'
 Vue.use(Vuelidate)
