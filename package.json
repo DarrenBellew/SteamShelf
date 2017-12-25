@@ -1,6 +1,6 @@
 {
   "name": "SteamShelf",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Vue.js project",
   "author": "Darren Bellew",
   "private": true,
@@ -12,7 +12,6 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --auto-watch",
     "dev": "node build/dev-server.js",
     "build": "npm version patch && node build/build.js",
-    "deploy": "npm run build && cp -r dist/* site",
     "cp-dist": "cp -r ./static ./dist/ || true && rm -rf ./server/public && cp -r ./dist/ ./server/public/ && cp ./dist/index.html ./server/public/",
     "add-git-hooks": "cp ./git-hooks/pre-push ../.git/hooks/pre-push && chmod +x ../.git/hooks/pre-push"
   },
