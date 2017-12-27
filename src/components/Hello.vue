@@ -28,6 +28,7 @@
                 a(href='http://vue-loader.vuejs.org/', target='_blank') vue-loader
             li
                 a(href='https://github.com/vuejs/awesome-vue', target='_blank') awesome-vue
+
 </template>
 
 <script>
@@ -43,7 +44,7 @@
         async created() {
 			console.log('test');
         }
-    }
+    };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

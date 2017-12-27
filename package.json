@@ -8,7 +8,7 @@
     "clean-install": "cd .. && mvn clean install",
     "clean-install-no-tests": "cd .. && mvn clean install -DskipTests",
     "start": "node build/dev-server.js",
-    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
     "test": "npm run unit",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --auto-watch",
     "dev": "node build/dev-server.js",

@@ -3,28 +3,28 @@
 
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'font-awesome/css/font-awesome.css'
-import 'core-js/client/shim.min.js'
+import Vue from 'vue';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
+import 'core-js/client/shim.min.js';
 
 import './common/dev-stuff';
 import './common/vue-prototype-decorators';
 
-import Vuelidate from 'vuelidate'
-Vue.use(Vuelidate)
+import Vuelidate from 'vuelidate';
+Vue.use(Vuelidate);
 
-require('mini-toastr').init()
+require('mini-toastr').init();
 
 // Add Auto prop injection mixin
-Vue.mixin(require('./common/inject-store').default)
+Vue.mixin(require('./common/inject-store').default);
 
-import App from './app'
-import store from './store'
-import router from './router'
+import App from './app';
+import store from './store';
+import router from './router';
 
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
@@ -33,4 +33,4 @@ new Vue({
     router,
     template:   '<App/>',
     components: { App },
-})
+});
